@@ -3,27 +3,394 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vannus AI — Concierge</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<title>Vannus Concierge — Founder-Led AI Tool Evaluation</title>
+<meta name="description" content="The only affordable, founder-led AI tool evaluation service. Stack audits, gap analysis, and migration planning from $997. No contracts. No junior handoffs.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#080812;--bg2:#0e0e1f;--card:#12122a;--border:rgba(255,255,255,0.06);--border-accent:rgba(120,100,255,0.3);--text:#e8e8f0;--text-dim:rgba(255,255,255,0.5);--text-dimmer:rgba(255,255,255,0.3);--accent:#7B6FF0;--accent2:#5B8DF0;--green:#34d399;--red-dim:rgba(255,80,80,0.08);--red-text:#ff6b6b}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,18,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}.nav-logo{font-family:'Instrument Serif',serif;font-size:24px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.nav-link{color:var(--text-dim);text-decoration:none;font-size:14px;letter-spacing:.5px;transition:color .3s}.nav-link:hover{color:var(--text)}
-.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 24px 80px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(120,100,255,0.08) 0%,transparent 70%);border-radius:50%}.hero-badge{display:inline-block;padding:6px 18px;border:1px solid var(--border-accent);border-radius:100px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:32px;background:rgba(120,100,255,0.05)}.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(36px,6vw,64px);font-weight:400;line-height:1.15;max-width:700px;margin-bottom:24px}.hero h1 em{font-style:italic;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero-sub{font-size:17px;color:var(--text-dim);max-width:520px;margin-bottom:48px;line-height:1.8}.hero-cta{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:15px;letter-spacing:.5px;transition:transform .3s,box-shadow .3s}.hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(120,100,255,0.3)}
-.bridge{padding:60px 24px 80px;max-width:900px;margin:0 auto}.bridge-heading{font-family:'Instrument Serif',serif;font-size:32px;text-align:center;margin-bottom:48px}.bridge-grid{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:stretch}.bridge-card{padding:36px 32px;border-radius:16px}.bridge-free{background:var(--card);border:1px solid var(--border)}.bridge-paid{background:linear-gradient(170deg,rgba(120,100,255,0.1),var(--card));border:1px solid var(--border-accent)}.bridge-arrow{display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--text-dimmer)}.bridge-card-label{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:16px}.bridge-free .bridge-card-label{color:var(--text-dimmer)}.bridge-paid .bridge-card-label{color:var(--accent)}.bridge-card h3{font-size:20px;margin-bottom:16px;font-weight:700}.bridge-card ul{list-style:none;padding:0}.bridge-card ul li{padding:6px 0;font-size:14px;color:var(--text-dim);display:flex;align-items:flex-start;gap:8px}.bridge-card ul li::before{content:'→';color:var(--text-dimmer);flex-shrink:0}.bridge-paid ul li::before{color:var(--green);content:'✓'}.bridge-bottom{text-align:center;margin-top:40px;padding:24px;background:var(--card);border-radius:12px;border:1px solid var(--border)}.bridge-bottom p{color:var(--text-dim);font-size:15px;line-height:1.7}.bridge-bottom strong{color:var(--text)}
-.trust{padding:60px 24px;max-width:800px;margin:0 auto;text-align:center}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.trust-item{padding:28px 20px;background:var(--card);border:1px solid var(--border);border-radius:12px}.trust-number{font-size:36px;font-weight:700;color:var(--text);margin-bottom:4px}.trust-label{font-size:13px;color:var(--text-dimmer);text-transform:uppercase;letter-spacing:1.5px}
-.compare{padding:80px 24px;max-width:800px;margin:0 auto;text-align:center}.compare h2{font-family:'Instrument Serif',serif;font-size:32px;margin-bottom:16px}.compare>p{color:var(--text-dim);margin-bottom:48px;font-size:16px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left}.compare-item{padding:24px 28px;border-radius:12px;font-size:15px;line-height:1.7}.compare-them{background:var(--red-dim);border:1px solid rgba(255,80,80,0.1);color:var(--red-text)}.compare-us{background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.1);color:var(--green)}.compare-label{font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;opacity:.7}
-.pricing{padding:80px 24px;max-width:1100px;margin:0 auto}.pricing h2{font-family:'Instrument Serif',serif;font-size:36px;text-align:center;margin-bottom:16px}.pricing-sub{text-align:center;color:var(--text-dim);margin-bottom:56px;font-size:16px}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}.price-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:40px 32px;position:relative;transition:border-color .3s,transform .3s;display:flex;flex-direction:column}.price-card:hover{border-color:var(--border-accent);transform:translateY(-4px)}.price-card.featured{border-color:var(--accent);background:linear-gradient(170deg,rgba(120,100,255,0.08),var(--card))}.price-card.featured::before{content:'MOST POPULAR';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;padding:4px 16px;border-radius:100px;white-space:nowrap}.price-tier{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:8px}.price-amount{font-size:48px;font-weight:700;margin-bottom:4px}.price-versus{font-size:13px;color:var(--text-dimmer);margin-bottom:24px;padding:6px 12px;background:var(--red-dim);border-radius:6px;display:inline-block}.price-versus span{text-decoration:line-through;color:var(--red-text);opacity:.8}.price-desc{color:var(--text-dim);font-size:15px;margin-bottom:24px;line-height:1.7}.price-who{font-size:13px;color:var(--accent);margin-bottom:20px;padding:10px 14px;background:rgba(120,100,255,0.05);border-radius:8px;border-left:3px solid var(--accent)}.price-deliverables-label{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--text-dimmer);margin-bottom:12px}.price-features{list-style:none;margin-bottom:32px;flex-grow:1}.price-features li{padding:8px 0;font-size:14px;color:var(--text-dim);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}.price-features li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}.price-cta{display:block;text-align:center;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px;transition:all .3s}.price-cta-outline{border:1px solid var(--border-accent);color:var(--accent);background:transparent}.price-cta-outline:hover{background:rgba(120,100,255,0.1)}.price-cta-fill{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none}.price-cta-fill:hover{box-shadow:0 6px 20px rgba(120,100,255,0.3);transform:translateY(-1px)}
-.form-section{padding:80px 24px 120px;max-width:640px;margin:0 auto}.form-section h2{font-family:'Instrument Serif',serif;font-size:32px;text-align:center;margin-bottom:12px}.form-section>p{color:var(--text-dim);text-align:center;margin-bottom:48px}form{display:flex;flex-direction:column;gap:20px}label{font-size:13px;letter-spacing:.5px;color:var(--text-dim);margin-bottom:4px;display:block}input,select,textarea{width:100%;padding:14px 18px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;transition:border-color .3s;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}textarea{min-height:120px;resize:vertical}select{cursor:pointer}select option{background:var(--bg2)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.submit-btn{padding:16px 32px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;transition:transform .3s,box-shadow .3s;font-family:'DM Sans',sans-serif;margin-top:8px}.submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(120,100,255,0.3)}
-footer{padding:40px 24px;text-align:center;border-top:1px solid var(--border);color:var(--text-dimmer);font-size:13px}footer a{color:var(--accent);text-decoration:none}
-@media(max-width:700px){nav{padding:16px 20px}.compare-grid{grid-template-columns:1fr}.pricing-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.hero{padding:120px 20px 60px}.bridge-grid{grid-template-columns:1fr}.bridge-arrow{transform:rotate(90deg);padding:12px 0}.trust-grid{grid-template-columns:1fr}}
+:root{--bg:#070710;--bg2:#0c0c1a;--card:#111128;--card-hover:#16163a;--border:rgba(255,255,255,0.06);--border-accent:rgba(120,100,255,0.25);--text:#ececf4;--text-dim:rgba(255,255,255,0.55);--text-dimmer:rgba(255,255,255,0.3);--accent:#7B6FF0;--accent2:#5B8DF0;--accent-glow:rgba(120,100,255,0.15);--green:#34d399;--green-dim:rgba(52,211,153,0.08);--red-dim:rgba(255,80,80,0.06);--red-text:#ff6b6b;--gold:#f0c060}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(7,7,16,0.88);backdrop-filter:blur(24px) saturate(1.3);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Instrument Serif',serif;font-size:22px;background:linear-gradient(135deg,#fff 30%,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em}
+.nav-link{color:var(--text-dim);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.3px;transition:color .3s}.nav-link:hover{color:var(--text)}
+
+/* Hero */
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 24px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-300px;width:800px;height:800px;background:radial-gradient(circle,rgba(120,100,255,0.06) 0%,rgba(91,141,240,0.03) 40%,transparent 70%);border-radius:50%;animation:pulse 8s ease-in-out infinite}
+.hero::after{content:'';position:absolute;top:60%;left:50%;width:1200px;height:400px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(52,211,153,0.03) 0%,transparent 60%);pointer-events:none}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:0.8}50%{transform:scale(1.1);opacity:1}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border:1px solid var(--border-accent);border-radius:100px;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:36px;background:rgba(120,100,255,0.04)}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:dot-pulse 2s ease-in-out infinite}
+@keyframes dot-pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(38px,6.5vw,68px);font-weight:400;line-height:1.1;max-width:750px;margin-bottom:24px;letter-spacing:-0.02em}
+.hero h1 em{font-style:italic;background:linear-gradient(135deg,var(--accent),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:17px;color:var(--text-dim);max-width:540px;margin-bottom:20px;line-height:1.85}
+.hero-roi{font-size:14px;color:var(--green);margin-bottom:44px;font-weight:600;letter-spacing:0.3px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.hero-cta{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;border-radius:10px;font-weight:700;font-size:15px;letter-spacing:.3px;transition:transform .3s,box-shadow .3s}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(120,100,255,0.3)}
+.hero-cta-outline{background:transparent;border:1px solid var(--border-accent);color:var(--accent)}
+.hero-cta-outline:hover{background:rgba(120,100,255,0.08);box-shadow:none;transform:translateY(-1px)}
+
+/* Divider */
+.section-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:0 auto}
+
+/* Stats bar */
+.stats-bar{padding:48px 24px;max-width:900px;margin:0 auto}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat-item{padding:24px 16px}
+.stat-number{font-size:32px;font-weight:700;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
+.stat-label{font-size:12px;color:var(--text-dimmer);text-transform:uppercase;letter-spacing:1.5px}
+
+/* Bridge */
+.bridge{padding:80px 24px;max-width:900px;margin:0 auto}
+.bridge-heading{font-family:'Instrument Serif',serif;font-size:34px;text-align:center;margin-bottom:12px}
+.bridge-sub{text-align:center;color:var(--text-dim);margin-bottom:48px;font-size:15px}
+.bridge-grid{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:stretch}
+.bridge-card{padding:36px 32px;border-radius:16px;transition:transform 0.3s}
+.bridge-card:hover{transform:translateY(-2px)}
+.bridge-free{background:var(--card);border:1px solid var(--border)}
+.bridge-paid{background:linear-gradient(170deg,rgba(120,100,255,0.08),var(--card));border:1px solid var(--border-accent)}
+.bridge-arrow{display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--accent);opacity:0.5}
+.bridge-card-label{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:16px}
+.bridge-free .bridge-card-label{color:var(--text-dimmer)}
+.bridge-paid .bridge-card-label{color:var(--accent)}
+.bridge-card h3{font-size:20px;margin-bottom:16px;font-weight:700}
+.bridge-card ul{list-style:none;padding:0}
+.bridge-card ul li{padding:7px 0;font-size:14px;color:var(--text-dim);display:flex;align-items:flex-start;gap:8px}
+.bridge-card ul li::before{content:'\2192';color:var(--text-dimmer);flex-shrink:0}
+.bridge-paid ul li::before{color:var(--green);content:'\2713'}
+.bridge-bottom{text-align:center;margin-top:40px;padding:28px 32px;background:var(--card);border-radius:14px;border:1px solid var(--border)}
+.bridge-bottom p{color:var(--text-dim);font-size:15px;line-height:1.7}
+.bridge-bottom strong{color:var(--text)}
+
+/* ROI callout */
+.roi-section{padding:60px 24px;max-width:700px;margin:0 auto}
+.roi-card{background:linear-gradient(135deg,rgba(52,211,153,0.06),rgba(120,100,255,0.04));border:1px solid rgba(52,211,153,0.15);border-radius:16px;padding:40px 36px;text-align:center;position:relative;overflow:hidden}
+.roi-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 40%,rgba(52,211,153,0.04),transparent 50%);pointer-events:none}
+.roi-card h3{font-family:'Instrument Serif',serif;font-size:28px;margin-bottom:16px;color:var(--green)}
+.roi-card p{color:var(--text-dim);font-size:15px;line-height:1.8;max-width:520px;margin:0 auto}
+.roi-stat{font-size:48px;font-weight:700;color:var(--text);margin:20px 0 8px}
+.roi-stat-label{font-size:14px;color:var(--text-dim)}
+
+/* Compare */
+.compare{padding:80px 24px;max-width:800px;margin:0 auto;text-align:center}
+.compare h2{font-family:'Instrument Serif',serif;font-size:34px;margin-bottom:16px}
+.compare>p{color:var(--text-dim);margin-bottom:48px;font-size:15px;max-width:600px;margin-left:auto;margin-right:auto}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left}
+.compare-item{padding:28px 28px;border-radius:14px;font-size:15px;line-height:1.7;transition:transform 0.3s}
+.compare-item:hover{transform:translateY(-2px)}
+.compare-them{background:var(--red-dim);border:1px solid rgba(255,80,80,0.08);color:var(--red-text)}
+.compare-us{background:var(--green-dim);border:1px solid rgba(52,211,153,0.1);color:var(--green)}
+.compare-label{font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;opacity:.7}
+
+/* Why different */
+.why-section{padding:80px 24px;max-width:900px;margin:0 auto}
+.why-section h2{font-family:'Instrument Serif',serif;font-size:34px;text-align:center;margin-bottom:48px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-card{padding:32px 28px;background:var(--card);border:1px solid var(--border);border-radius:14px;transition:border-color 0.3s,transform 0.3s}
+.why-card:hover{border-color:var(--border-accent);transform:translateY(-3px)}
+.why-icon{font-size:28px;margin-bottom:16px;display:block}
+.why-card h3{font-size:16px;font-weight:700;margin-bottom:10px}
+.why-card p{font-size:14px;color:var(--text-dim);line-height:1.7}
+
+/* Pricing */
+.pricing{padding:80px 24px;max-width:1100px;margin:0 auto}
+.pricing h2{font-family:'Instrument Serif',serif;font-size:36px;text-align:center;margin-bottom:12px}
+.pricing-sub{text-align:center;color:var(--text-dim);margin-bottom:56px;font-size:15px}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.price-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:40px 32px;position:relative;transition:border-color .3s,transform .3s;display:flex;flex-direction:column}
+.price-card:hover{border-color:var(--border-accent);transform:translateY(-4px)}
+.price-card.featured{border-color:var(--accent);background:linear-gradient(170deg,rgba(120,100,255,0.06),var(--card))}
+.price-card.featured::before{content:'MOST POPULAR';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;padding:5px 18px;border-radius:100px;white-space:nowrap}
+.price-tier{font-size:12px;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);margin-bottom:8px;font-weight:600}
+.price-amount{font-size:48px;font-weight:700;margin-bottom:4px;letter-spacing:-0.02em}
+.price-versus{font-size:12px;color:var(--text-dimmer);margin-bottom:24px;padding:6px 14px;background:var(--red-dim);border-radius:6px;display:inline-block}
+.price-versus span{text-decoration:line-through;color:var(--red-text);opacity:.8}
+.price-desc{color:var(--text-dim);font-size:14px;margin-bottom:24px;line-height:1.8}
+.price-who{font-size:13px;color:var(--accent);margin-bottom:20px;padding:12px 14px;background:rgba(120,100,255,0.04);border-radius:10px;border-left:3px solid var(--accent);line-height:1.6}
+.price-deliverables-label{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--text-dimmer);margin-bottom:12px}
+.price-features{list-style:none;margin-bottom:32px;flex-grow:1}
+.price-features li{padding:9px 0;font-size:14px;color:var(--text-dim);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.price-features li::before{content:'\2713';color:var(--green);font-weight:700;flex-shrink:0}
+.price-credit{font-size:12px;color:var(--gold);margin-bottom:20px;padding:10px 14px;background:rgba(240,192,96,0.06);border-radius:8px;border:1px solid rgba(240,192,96,0.15);text-align:center}
+.price-cta{display:block;text-align:center;padding:15px 24px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;transition:all .3s}
+.price-cta-outline{border:1px solid var(--border-accent);color:var(--accent);background:transparent}
+.price-cta-outline:hover{background:rgba(120,100,255,0.1)}
+.price-cta-fill{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none}
+.price-cta-fill:hover{box-shadow:0 8px 28px rgba(120,100,255,0.3);transform:translateY(-1px)}
+
+/* Social proof placeholder */
+.proof-section{padding:60px 24px;max-width:700px;margin:0 auto;text-align:center}
+.proof-quote{font-family:'Instrument Serif',serif;font-size:22px;font-style:italic;line-height:1.6;color:var(--text);margin-bottom:16px;position:relative;padding:0 20px}
+.proof-quote::before{content:'\201C';font-size:60px;position:absolute;top:-20px;left:-10px;color:var(--accent);opacity:0.3;font-family:'Instrument Serif',serif}
+.proof-attr{font-size:13px;color:var(--text-dimmer);letter-spacing:0.5px}
+
+/* Form */
+.form-section{padding:80px 24px 120px;max-width:640px;margin:0 auto}
+.form-section h2{font-family:'Instrument Serif',serif;font-size:34px;text-align:center;margin-bottom:12px}
+.form-section>p{color:var(--text-dim);text-align:center;margin-bottom:48px;font-size:15px}
+form{display:flex;flex-direction:column;gap:20px}
+label{font-size:13px;letter-spacing:.3px;color:var(--text-dim);margin-bottom:4px;display:block;font-weight:500}
+input,select,textarea{width:100%;padding:14px 18px;background:var(--card);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;transition:border-color .3s,box-shadow .3s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(120,100,255,0.08)}
+textarea{min-height:120px;resize:vertical}
+select{cursor:pointer}select option{background:var(--bg2)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.submit-btn{padding:16px 32px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:10px;font-weight:700;font-size:15px;cursor:pointer;transition:transform .3s,box-shadow .3s;font-family:'DM Sans',sans-serif;margin-top:8px}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(120,100,255,0.3)}
+
+/* Footer */
+footer{padding:48px 24px;text-align:center;border-top:1px solid var(--border);color:var(--text-dimmer);font-size:13px}
+footer a{color:var(--accent);text-decoration:none;transition:color 0.3s}
+footer a:hover{color:var(--text)}
+
+/* Responsive */
+@media(max-width:700px){
+  nav{padding:16px 20px}
+  .compare-grid{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .hero{padding:120px 20px 60px;min-height:auto}
+  .bridge-grid{grid-template-columns:1fr}
+  .bridge-arrow{transform:rotate(90deg);padding:12px 0}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .why-grid{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column;align-items:center}
+}
 </style>
 </head>
 <body>
-<nav><div class="nav-logo">Vannus</div><a href="https://vannus.co" class="nav-link">← Back to Platform</a></nav>
-<section class="hero"><div class="hero-badge">Concierge Service</div><h1>The platform eliminates. <em>We go deeper.</em></h1><p class="hero-sub">Vannus Concierge is a founder-led evaluation service for businesses, teams, and operators that need more than a search bar. We analyze your full stack, find the gaps, cut the waste, and hand you a plan you can act on immediately.</p><a href="#form" class="hero-cta">Get Started</a></section>
-<section class="bridge"><h2 class="bridge-heading">When the free platform isn't enough</h2><div class="bridge-grid"><div class="bridge-card bridge-free"><div class="bridge-card-label">Free Platform</div><h3>vannus.co</h3><ul><li>Search by task, get AI tool recommendations</li><li>Evaluate one tool or category at a time</li><li>Self-serve — no human involved</li><li>Scored on pricing, compliance, trust, integrations</li><li>Perfect for choosing a single tool for a single job</li></ul></div><div class="bridge-arrow">→</div><div class="bridge-card bridge-paid"><div class="bridge-card-label">Concierge</div><h3>Founder-Led Evaluation</h3><ul><li>Full stack audit — every tool, every overlap, every gap</li><li>Custom written deliverable with migration plan</li><li>Replacement recommendations with cost analysis</li><li>Direct access to Vannus founders — no junior handoffs</li><li>Perfect for anyone running 5+ tools who needs strategy, not just search</li></ul></div></div><div class="bridge-bottom"><p><strong>Think of it like TurboTax vs. hiring an accountant.</strong> The platform is TurboTax — enter your info, get an answer. Concierge is the accountant — someone who looks at your entire situation, finds what you're missing, and tells you exactly what to do. Same expertise, different depth.</p></div></section>
-<section class="trust"><div class="trust-grid"><div class="trust-item"><div class="trust-number">250+</div><div class="trust-label">Tools Vetted</div></div><div class="trust-item"><div class="trust-number">0</div><div class="trust-label">Paid Placements</div></div><div class="trust-item"><div class="trust-number">0</div><div class="trust-label">Vendor Influence</div></div></div></section>
-<section class="compare"><h2>What the market charges</h2><p>AI consulting in 2026 isn't cheap. Readiness assessments alone run $2,000–$8,000 for small businesses. Strategy engagements start at $8,000–$25,000. We built a better model.</p><div class="compare-grid"><div class="compare-item compare-them"><div class="compare-label">Typical Agency</div>$10,000–$30,000+ with 3-month lock-in contracts, generic playbooks, and junior consultants doing the actual work while senior partners move on.</div><div class="compare-item compare-us"><div class="compare-label">Vannus Concierge</div>$497–$2,997 with no contracts. Founder-led — the person who built the evaluation platform is the person evaluating your stack. No handoffs. No templates. No lock-ins.</div><div class="compare-item compare-them"><div class="compare-label">Freelance Consultant</div>$150–$300/hour with no structured methodology, no pre-vetted tool database, and no guarantee of AI-specific expertise. A 10-hour engagement costs $1,500–$3,000 before deliverables.</div><div class="compare-item compare-us"><div class="compare-label">Vannus Concierge</div>Flat fee — you know the cost before you start. Built on 250+ pre-vetted tools and a proprietary elimination methodology. We're not starting from scratch on your engagement.</div></div></section>
-<section class="pricing" id="pricing"><h2>Choose Your Depth</h2><p class="pricing-sub">Every tier is founder-led. No junior handoffs. No templates. No recurring fees.</p><div class="pricing-grid"><div class="price-card"><div class="price-tier">Quick Audit</div><div class="price-amount">$497</div><div class="price-versus">Industry baseline: <span>$2,000–$8,000</span></div><div class="price-who">Best for: Anyone choosing between tools for a specific task — businesses, freelancers, or solo operators</div><p class="price-desc">A focused evaluation of one problem. You know what you need help with — we tell you exactly what to use and what to avoid.</p><div class="price-deliverables-label">What You Get</div><ul class="price-features"><li>Single tool or category evaluation</li><li>3–5 alternatives compared with elimination scoring</li><li>Pricing and integration analysis</li><li>Written recommendation report with rationale</li><li>Delivered within 5 business days</li></ul><a href="#form" class="price-cta price-cta-outline">Start a Quick Audit</a></div><div class="price-card featured"><div class="price-tier">Full Evaluation</div><div class="price-amount">$1,497</div><div class="price-versus">Strategy firms charge: <span>$8,000–$25,000</span></div><div class="price-who">Best for: Businesses, agencies, and teams running multiple AI tools with overlap or gaps</div><p class="price-desc">A complete stack evaluation. We find what's redundant, what's missing, what to replace, and how much you'll save.</p><div class="price-deliverables-label">What You Get</div><ul class="price-features"><li>Full tech stack audit (up to 10 tools)</li><li>Redundancy map and gap analysis</li><li>Replacement recommendations with migration steps</li><li>Cost savings breakdown with projections</li><li>45-minute strategy call with a founder</li><li>Delivered within 10 business days</li></ul><a href="#form" class="price-cta price-cta-fill">Start a Full Evaluation</a></div><div class="price-card"><div class="price-tier">Concierge</div><div class="price-amount">$2,997</div><div class="price-versus">Agencies charge: <span>$10,000–$30,000+</span></div><div class="price-who">Best for: End-to-end AI tool strategy with ongoing implementation support</div><p class="price-desc">We build your stack, plan the migration, negotiate with vendors, and stay with you through implementation. White-glove, start to finish.</p><div class="price-deliverables-label">What You Get</div><ul class="price-features"><li>Everything in Full Evaluation</li><li>Unlimited tools evaluated</li><li>Custom implementation roadmap</li><li>Vendor negotiation support</li><li>30 days of direct founder access for follow-up</li><li>Priority access to new tools and partner deals</li></ul><a href="#form" class="price-cta price-cta-outline">Start Concierge</a></div></div></section>
-<section class="form-section" id="form"><h2>Let's Talk</h2><p>Tell us what you need. A Vannus founder will review your submission and reach out within 24 hours. No sales team. No bots. Just us.</p><form name="concierge" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="concierge"><p style="display:none"><input name="bot-field"></p><div class="form-row"><div><label>Name *</label><input type="text" name="name" required placeholder="Your name"></div><div><label>Email *</label><input type="email" name="email" required placeholder="you@company.com"></div></div><div class="form-row"><div><label>Business Name</label><input type="text" name="business" placeholder="Your company or 'Individual'"></div><div><label>Service Tier *</label><select name="tier" required><option value="" disabled selected>Select a tier</option><option value="Quick Audit — $497">Quick Audit — $497</option><option value="Full Evaluation — $1,497">Full Evaluation — $1,497</option><option value="Concierge — $2,997">Concierge — $2,997</option><option value="Not sure — help me decide">Not sure — help me decide</option></select></div></div><div><label>What tools are you currently using?</label><input type="text" name="current_tools" placeholder="e.g., ChatGPT, Salesforce, HubSpot, Zapier..."></div><div><label>What do you need help with? *</label><textarea name="details" required placeholder="What problems are you facing? What are you trying to accomplish? Are you looking to replace a specific tool, evaluate your full stack, or figure out where to start with AI?"></textarea></div><button type="submit" class="submit-btn">Submit Request</button></form></section>
-<footer><p>&copy; 2026 PRAXIS AI LLC &nbsp;·&nbsp; <a href="https://vannus.co">vannus.co</a> &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96f2e4f7fdf3d6e6e4f7eeffe5bbf7ffb8fbf3"
+
+<nav>
+  <div class="nav-logo">Vannus</div>
+  <a href="https://vannus.co" class="nav-link">&larr; Back to Platform</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">Concierge Service</div>
+  <h1>The platform eliminates. <em>We go deeper.</em></h1>
+  <p class="hero-sub">Vannus Concierge is a founder-led AI tool evaluation service for teams and operators who need more than a search bar. We audit your stack, find the waste, and hand you a plan you can act on today.</p>
+  <p class="hero-roi">Most teams overspend $200&ndash;$800/month on overlapping AI tools. One audit pays for itself.</p>
+  <div class="hero-ctas">
+    <a href="#pricing" class="hero-cta">See Pricing</a>
+    <a href="#form" class="hero-cta hero-cta-outline">Start a Conversation</a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-number">256+</div><div class="stat-label">Tools Vetted</div></div>
+    <div class="stat-item"><div class="stat-number">0</div><div class="stat-label">Paid Placements</div></div>
+    <div class="stat-item"><div class="stat-number">0</div><div class="stat-label">Vendor Influence</div></div>
+    <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Founder-Led</div></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- Bridge: Free vs. Concierge -->
+<section class="bridge">
+  <h2 class="bridge-heading">When the free platform isn't enough</h2>
+  <p class="bridge-sub">The platform handles single decisions. Concierge handles strategy.</p>
+  <div class="bridge-grid">
+    <div class="bridge-card bridge-free">
+      <div class="bridge-card-label">Free Platform</div>
+      <h3>vannus.co</h3>
+      <ul>
+        <li>Search by task, get AI tool recommendations</li>
+        <li>Evaluate one tool or category at a time</li>
+        <li>Self-serve &mdash; no human involved</li>
+        <li>Scored on pricing, compliance, trust, integrations</li>
+        <li>Perfect for choosing a single tool</li>
+      </ul>
+    </div>
+    <div class="bridge-arrow">&rarr;</div>
+    <div class="bridge-card bridge-paid">
+      <div class="bridge-card-label">Concierge</div>
+      <h3>Founder-Led Evaluation</h3>
+      <ul>
+        <li>Full stack audit &mdash; every tool, every overlap, every gap</li>
+        <li>Custom deliverable with migration plan</li>
+        <li>Replacement recommendations with cost analysis</li>
+        <li>Direct access to founders &mdash; no junior handoffs</li>
+        <li>Perfect for teams running 5+ tools</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bridge-bottom">
+    <p><strong>Think of it like TurboTax vs. hiring an accountant.</strong> The platform is TurboTax &mdash; enter your info, get an answer. Concierge is the accountant &mdash; someone who looks at your entire situation and tells you exactly what to do.</p>
+  </div>
+</section>
+
+<!-- ROI Callout -->
+<section class="roi-section">
+  <div class="roi-card">
+    <h3>The math is simple</h3>
+    <div class="roi-stat">$200&ndash;$800</div>
+    <div class="roi-stat-label">Monthly overspend on overlapping AI tools (industry average)</div>
+    <p style="margin-top:20px">Most teams don't realize how much they waste on redundant subscriptions, underused seats, and tools that don't integrate. A single audit surfaces enough savings to pay for itself &mdash; before you change a thing.</p>
+  </div>
+</section>
+
+<!-- Why Different -->
+<section class="why-section">
+  <h2>Why this isn't like other consulting</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">&#9670;</span>
+      <h3>No Junior Handoffs</h3>
+      <p>The person who built the evaluation platform is the person evaluating your stack. Senior expertise from the first call to the final deliverable.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">&#9670;</span>
+      <h3>Data-Backed, Not Opinion</h3>
+      <p>Every recommendation is built on 256+ pre-vetted tools and a proprietary elimination methodology. We don't guess &mdash; we score.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">&#9670;</span>
+      <h3>Flat Fee, No Surprises</h3>
+      <p>You know the cost before you start. No hourly billing, no scope creep, no retainers. One price, one deliverable, one outcome.</p>
+    </div>
+  </div>
+</section>
+
+<!-- What the market charges -->
+<section class="compare">
+  <h2>What the market charges</h2>
+  <p>AI consulting isn't cheap. Strategy engagements start at $8,000. Readiness assessments alone run $2,000&ndash;$8,000. We built something better.</p>
+  <div class="compare-grid">
+    <div class="compare-item compare-them">
+      <div class="compare-label">Typical Agency</div>
+      $10,000&ndash;$30,000+ with 3-month lock-in contracts, generic playbooks, and junior consultants doing the work while senior partners disappear.
+    </div>
+    <div class="compare-item compare-us">
+      <div class="compare-label">Vannus Concierge</div>
+      $997&ndash;$4,997 with no contracts. Founder-led from start to finish. No handoffs, no templates, no lock-ins. You work with us directly.
+    </div>
+    <div class="compare-item compare-them">
+      <div class="compare-label">Freelance Consultant</div>
+      $150&ndash;$300/hour with no structured methodology and no pre-vetted tool database. A 10-hour engagement costs $1,500&ndash;$3,000 before any deliverable.
+    </div>
+    <div class="compare-item compare-us">
+      <div class="compare-label">Vannus Concierge</div>
+      Flat fee &mdash; you know the cost before you start. Built on 256+ pre-vetted tools and a proprietary elimination methodology.
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing">
+  <h2>Choose Your Depth</h2>
+  <p class="pricing-sub">Every tier is founder-led. No junior handoffs. No templates. No recurring fees.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-tier">Diagnostic</div>
+      <div class="price-amount">$997</div>
+      <div class="price-versus">Industry baseline: <span>$2,000&ndash;$8,000</span></div>
+      <div class="price-who">Best for: Businesses, freelancers, or operators choosing between tools for a specific task</div>
+      <p class="price-desc">A focused evaluation of one problem. You know what you need help with &mdash; we tell you exactly what to use and what to avoid.</p>
+      <div class="price-deliverables-label">What You Get</div>
+      <ul class="price-features">
+        <li>Single tool or category deep-dive</li>
+        <li>3&ndash;5 alternatives compared with elimination scoring</li>
+        <li>Pricing, compliance, and integration analysis</li>
+        <li>Written recommendation report with rationale</li>
+        <li>Delivered within 5 business days</li>
+      </ul>
+      <div class="price-credit">&#9733; 100% credited toward Full Evaluation if you upgrade</div>
+      <a href="#form" class="price-cta price-cta-outline">Start a Diagnostic</a>
+    </div>
+
+    <div class="price-card featured">
+      <div class="price-tier">Full Evaluation</div>
+      <div class="price-amount">$2,497</div>
+      <div class="price-versus">Strategy firms charge: <span>$8,000&ndash;$25,000</span></div>
+      <div class="price-who">Best for: Businesses, agencies, and teams running multiple AI tools with overlap or gaps</div>
+      <p class="price-desc">A complete stack evaluation. We find what's redundant, what's missing, what to replace, and how much you'll save.</p>
+      <div class="price-deliverables-label">What You Get</div>
+      <ul class="price-features">
+        <li>Full tech stack audit (up to 15 tools)</li>
+        <li>Redundancy map and gap analysis</li>
+        <li>Replacement recommendations with migration steps</li>
+        <li>Cost savings breakdown with projections</li>
+        <li>60-minute strategy call with a founder</li>
+        <li>Delivered within 10 business days</li>
+      </ul>
+      <a href="#form" class="price-cta price-cta-fill">Start a Full Evaluation</a>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">Concierge</div>
+      <div class="price-amount">$4,997</div>
+      <div class="price-versus">Agencies charge: <span>$10,000&ndash;$30,000+</span></div>
+      <div class="price-who">Best for: End-to-end AI tool strategy with hands-on implementation support</div>
+      <p class="price-desc">We build your stack, plan the migration, negotiate with vendors, and stay with you through implementation. White-glove, start to finish.</p>
+      <div class="price-deliverables-label">What You Get</div>
+      <ul class="price-features">
+        <li>Everything in Full Evaluation</li>
+        <li>Unlimited tools evaluated</li>
+        <li>Custom implementation roadmap</li>
+        <li>Vendor negotiation support</li>
+        <li>30 days of direct founder access</li>
+        <li>Priority access to new tools and partner deals</li>
+      </ul>
+      <a href="#form" class="price-cta price-cta-outline">Start Concierge</a>
+    </div>
+  </div>
+</section>
+
+<!-- Value prop callout -->
+<section class="proof-section">
+  <div class="section-divider" style="margin-bottom:40px"></div>
+  <p class="proof-quote">The average business runs 6&ndash;10 AI tools. Most have at least 2 that overlap and 1 they're overpaying for. We find them.</p>
+  <p class="proof-attr">&mdash; The Vannus Thesis</p>
+</section>
+
+<!-- Form -->
+<section class="form-section" id="form">
+  <h2>Let's Talk</h2>
+  <p>Tell us what you need. A Vannus founder will review your submission and reach out within 24 hours. No sales team. No bots. Just us.</p>
+  <form name="concierge" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="concierge">
+    <p style="display:none"><input name="bot-field"></p>
+    <div class="form-row">
+      <div><label>Name *</label><input type="text" name="name" required placeholder="Your name"></div>
+      <div><label>Email *</label><input type="email" name="email" required placeholder="you@company.com"></div>
+    </div>
+    <div class="form-row">
+      <div><label>Business Name</label><input type="text" name="business" placeholder="Your company or 'Individual'"></div>
+      <div>
+        <label>Service Tier *</label>
+        <select name="tier" required>
+          <option value="" disabled selected>Select a tier</option>
+          <option value="Diagnostic — $997">Diagnostic &mdash; $997</option>
+          <option value="Full Evaluation — $2,497">Full Evaluation &mdash; $2,497</option>
+          <option value="Concierge — $4,997">Concierge &mdash; $4,997</option>
+          <option value="Not sure — help me decide">Not sure &mdash; help me decide</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label>What tools are you currently using?</label>
+      <input type="text" name="current_tools" placeholder="e.g., ChatGPT, Salesforce, HubSpot, Zapier...">
+    </div>
+    <div>
+      <label>What do you need help with? *</label>
+      <textarea name="details" required placeholder="What problems are you facing? What are you trying to accomplish? Are you looking to replace a specific tool, evaluate your full stack, or figure out where to start with AI?"></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 PRAXIS AI LLC &nbsp;&middot;&nbsp; <a href="https://vannus.co">vannus.co</a></p>
+</footer>
+
+</body>
+</html>

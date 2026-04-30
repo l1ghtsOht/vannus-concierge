@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vannus AI — Request Received</title>
+<title>Vannus Concierge — Request Received</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #080812;
-  --text: #e8e8f0;
-  --text-dim: rgba(255,255,255,0.5);
+  --bg: #070710;
+  --text: #ececf4;
+  --text-dim: rgba(255,255,255,0.55);
   --accent: #7B6FF0;
   --accent2: #5B8DF0;
   --green: #34d399;
-  --border: rgba(255,255,255,0.06);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
@@ -32,13 +31,19 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(52,211,153,0.1);
+  background: rgba(52,211,153,0.08);
   border: 2px solid var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 36px;
   margin-bottom: 32px;
+  animation: pop 0.5s ease-out;
+}
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
 }
 h1 {
   font-family: 'Instrument Serif', serif;
@@ -55,8 +60,8 @@ p {
 a {
   display: inline-block;
   padding: 14px 36px;
-  border: 1px solid rgba(120,100,255,0.3);
-  border-radius: 8px;
+  border: 1px solid rgba(120,100,255,0.25);
+  border-radius: 10px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 700;
@@ -65,13 +70,14 @@ a {
 }
 a:hover {
   background: rgba(120,100,255,0.1);
+  transform: translateY(-1px);
 }
 </style>
 </head>
 <body>
-<div class="check">✓</div>
+<div class="check">&#10003;</div>
 <h1>Request Received</h1>
-<p>We've got your information. A Vannus founder will review your submission and reach out within 24 hours. No junior handoffs — you'll hear directly from us.</p>
+<p>We've got your information. A Vannus founder will review your submission and reach out within 24 hours. No junior handoffs &mdash; you'll hear directly from us.</p>
 <a href="https://vannus.co">Back to Vannus</a>
 </body>
 </html>
